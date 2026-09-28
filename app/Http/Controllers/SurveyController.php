@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Actions\CreateSurvey;
 use App\Http\Requests\SurveyRequest;
-use App\Models\Survey;
-use Illuminate\Support\Facades\DB;
 
 class SurveyController extends Controller
 {
@@ -13,18 +12,9 @@ class SurveyController extends Controller
         return view('survey.index');
     }
 
-    /**
-     * @throws \Throwable
-     */
-    public function store(SurveyRequest $request)
+    public function store(SurveyRequest $request, CreateSurvey $action)
     {
-        DB::transaction(function () use ($request) {
-            $survey = Survey::create($request->validated());
-
-            if (!empty($request->input('phones'))) {
-                $survey->phones()->createMany($request->input('phones'));
-            }
-        });
+        $action->execute($request->validated());
 
         if ($request->expectsJson()) {
             return response()->json(['success' => true]);

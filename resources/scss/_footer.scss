@@ -1,0 +1,109 @@
+.site-footer {
+  padding: 60px 0 24px;
+}
+
+.footer-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+
+.footer-contacts {
+  gap: 14px;
+  font-size: 15px;
+}
+
+.footer-contact-item {
+  gap: 12px;
+  color: var(--color-text);
+  transition: color 0.2s ease;
+  line-height: 1.4;
+}
+
+.footer-contact-item i {
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.footer-contact-item:hover {
+  color: var(--color-accent);
+}
+
+.footer-order-link {
+  margin-left: 30px;
+  font-size: 14px;
+  color: var(--color-text);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.footer-order-link:hover {
+  color: var(--color-accent);
+}
+
+.footer-menu,
+.footer-menu-2 {
+  gap: 12px;
+  font-size: 15px;
+}
+
+.footer-menu a,
+.footer-menu-2 a {
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+
+.footer-menu a:hover,
+.footer-menu-2 a:hover {
+  color: var(--color-accent);
+}
+
+.footer-all-link {
+  margin-top: 20px;
+  font-size: 15px;
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+
+.footer-all-link i {
+  margin-left: 4px;
+  transition: transform 0.2s ease;
+}
+
+.footer-all-link:hover {
+  color: var(--color-accent);
+}
+
+.footer-all-link:hover i {
+  transform: translateX(4px);
+}
+
+.footer-legal {
+  font-size: 14px;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  gap: 16px;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+  font-size: 14px;
+}
+
+.footer-privacy {
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+
+.footer-privacy:hover {
+  color: var(--color-accent);
+}
+
+.footer-dev {
+  gap: 12px;
+  color: var(--color-text);
+}

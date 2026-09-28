@@ -11,12 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('survey_phones', function (Blueprint $table) {
+        Schema::create('survey_phones', static function (Blueprint $table) {
             $table->id();
             $table->foreignId('survey_id')->constrained()->cascadeOnDelete();
             $table->string('country_code', 4);
             $table->string('phone', 20);
             $table->timestamps();
+
+            $table->index('phone');
         });
     }
 

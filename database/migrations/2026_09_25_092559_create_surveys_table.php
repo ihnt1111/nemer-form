@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('surveys', function (Blueprint $table) {
+        Schema::create('surveys', static function (Blueprint $table) {
             $table->id();
             $table->string('first_name', 100);
             $table->string('last_name', 100);
@@ -22,6 +22,9 @@ return new class extends Migration
             $table->text('about')->nullable();
             $table->boolean('agreed_to_rules')->default(false);
             $table->timestamps();
+
+            $table->index('email');
+            $table->index('created_at');
         });
     }
 
