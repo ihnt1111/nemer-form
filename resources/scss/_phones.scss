@@ -1,0 +1,53 @@
+.phone-row {
+  gap: 12px;
+  border-bottom: 1px solid var(--form-border);
+  transition: border-color 0.2s ease;
+}
+
+.phone-row:focus-within {
+  border-bottom-color: var(--form-accent);
+}
+
+.phone-row .form-control-underline,
+.phone-row .form-select {
+  border-bottom: none;
+  background-image: none;
+  padding-right: 0;
+}
+
+.phone-code {
+  max-width: 80px;
+  flex-shrink: 0;
+}
+
+.btn-add-phone {
+  background: transparent;
+  border: none;
+  color: var(--form-text-muted);
+  font-size: 18px;
+  line-height: 1;
+  padding: 4px 0 4px 8px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.btn-add-phone:hover {
+  color: var(--form-text);
+}
+
+.btn-remove-phone {
+  background: transparent;
+  border: none;
+  color: var(--form-text-muted);
+  font-size: 18px;
+  line-height: 1;
+  padding: 4px 0 4px 8px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.btn-remove-phone:hover {
+  color: var(--color-error);
+}

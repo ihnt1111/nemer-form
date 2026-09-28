@@ -4,6 +4,7 @@
 
 Laravel survey form. Layout based on a mockup, client- and server-side validation.
 
+---
 
 ## RU
 
@@ -12,19 +13,22 @@ Laravel survey form. Layout based on a mockup, client- and server-side validatio
 - PHP 8.5 / Laravel 13
 - MySQL
 - Blade
-- Bootstrap 5 + Bootstrap Icons (CDN)
-- Vanilla JS
+- Vite + SCSS
+- Bootstrap 5 через npm (tree-shaking — только используемые утилиты)
+- Bootstrap Icons (CDN)
+- Vanilla JS (ES-модули)
 - Work Sans (Google Fonts)
 
 ### Что нужно
 
-PHP 8.2+, Composer, MySQL.
+PHP 8.2+, Composer, Node.js 18+, MySQL.
 
 ### Установка
 
     git clone https://github.com/ihnt1111/nemer-form.git
     cd nemer-form
     composer install
+    npm install
     cp .env.example .env
     php artisan key:generate
 
@@ -45,14 +49,22 @@ PHP 8.2+, Composer, MySQL.
     DB_USERNAME=root
     DB_PASSWORD=
 
+### Сборка фронтенда
+
+    npm run build      # одноразовая сборка
+
 ### Запуск
 
-    php artisan migrate
+    php artisan migrate --seed
     php artisan serve
 
 Открыть http://127.0.0.1:8000
 
+### Тесты
 
+    php artisan test
+
+---
 
 ## EN
 
@@ -61,19 +73,22 @@ PHP 8.2+, Composer, MySQL.
 - PHP 8.5 / Laravel 13
 - MySQL
 - Blade
-- Bootstrap 5 + Bootstrap Icons (CDN)
-- Vanilla JS
+- Vite + SCSS
+- Bootstrap 5 via npm (tree-shaking — only used utilities)
+- Bootstrap Icons (CDN)
+- Vanilla JS (ES modules)
 - Work Sans (Google Fonts)
 
 ### Requirements
 
-PHP 8.2+, Composer, MySQL.
+PHP 8.2+, Composer, Node.js 18+, MySQL.
 
 ### Install
 
     git clone https://github.com/ihnt1111/nemer-form.git
     cd nemer-form
     composer install
+    npm install
     cp .env.example .env
     php artisan key:generate
 
@@ -94,10 +109,17 @@ Fill `.env`:
     DB_USERNAME=root
     DB_PASSWORD=
 
+### Frontend build
+
+    npm run build      # one-time production build
 
 ### Run
 
-    php artisan migrate
+    php artisan migrate --seed
     php artisan serve
 
 Open http://127.0.0.1:8000
+
+### Tests
+
+    php artisan test

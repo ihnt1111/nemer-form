@@ -1,4 +1,4 @@
-<footer class="site-footer">
+<footer class="site-footer bg-white">
     <div class="container">
         <div class="row g-4 g-lg-5">
 
@@ -7,17 +7,17 @@
                     <img src="{{ asset('images/nemer-logo.svg') }}" alt="Nemer" height="30">
                 </a>
 
-                <div class="footer-contacts">
-                    <a href="tel:+48690590089" class="footer-contact-item">
+                <div class="footer-contacts d-flex flex-column">
+                    <a href="tel:+48690590089" class="footer-contact-item d-flex align-items-start text-decoration-none">
                         <i class="bi bi-telephone"></i>
                         <span>+48690590089</span>
                     </a>
                     <a href="#" class="footer-order-link">Zamów rozmowę</a>
-                    <a href="mailto:info@nemer.pl" class="footer-contact-item">
+                    <a href="mailto:info@nemer.pl" class="footer-contact-item d-flex align-items-start text-decoration-none">
                         <i class="bi bi-envelope"></i>
                         <span>info@nemer.pl</span>
                     </a>
-                    <div class="footer-contact-item">
+                    <div class="footer-contact-item d-flex align-items-start">
                         <i class="bi bi-geo-alt"></i>
                         <span>Błonie, Pass 20J, budynek 15,<br>05-870</span>
                     </div>
@@ -26,25 +26,25 @@
 
             <div class="col-6 col-lg-3">
                 <div class="footer-heading">Usługi</div>
-                <ul class="footer-menu">
-                    <li><a href="#">Usługi logistyczne dla e-commerce</a></li>
-                    <li><a href="#">Outsourcing magazynu</a></li>
-                    <li><a href="#">Outsourcing logistyczny</a></li>
-                    <li><a href="#">Obsługa logistyczna sklepów internetowych</a></li>
-                    <li><a href="#">Logistyka kontraktowa</a></li>
+                <ul class="footer-menu list-unstyled d-flex flex-column">
+                    <li><a href="#" class="text-decoration-none">Usługi logistyczne dla e-commerce</a></li>
+                    <li><a href="#" class="text-decoration-none">Outsourcing magazynu</a></li>
+                    <li><a href="#" class="text-decoration-none">Outsourcing logistyczny</a></li>
+                    <li><a href="#" class="text-decoration-none">Obsługa logistyczna sklepów internetowych</a></li>
+                    <li><a href="#" class="text-decoration-none">Logistyka kontraktowa</a></li>
                 </ul>
-                <a href="#" class="footer-all-link">
+                <a href="#" class="footer-all-link d-inline-block text-decoration-none">
                     Zobacz wszystkie <i class="bi bi-arrow-right"></i>
                 </a>
             </div>
 
             <div class="col-6 col-lg-2">
                 <div class="footer-heading">O nas</div>
-                <ul class="footer-menu-2">
-                    <li><a href="#">Cennik</a></li>
-                    <li><a href="#">Pytania i odpowiedzi</a></li>
-                    <li><a href="https://t.me/ignat_mel">Kontakt</a></li>
-                    <li><a href="#">Blog</a></li>
+                <ul class="footer-menu-2 list-unstyled d-flex flex-column fw-semibold">
+                    <li><a href="#" class="text-decoration-none">Cennik</a></li>
+                    <li><a href="#" class="text-decoration-none">Pytania i odpowiedzi</a></li>
+                    <li><a href="https://t.me/ignat_mel" class="text-decoration-none">Kontakt</a></li>
+                    <li><a href="#" class="text-decoration-none">Blog</a></li>
                 </ul>
             </div>
 
@@ -55,12 +55,12 @@
                 <div>REGON: 385377605</div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <a href="#" class="footer-privacy">Polityka prywatności</a>
+        <div class="footer-bottom d-flex flex-column flex-md-row align-items-center justify-content-between">
+            <a href="#" class="footer-privacy text-decoration-none">Polityka prywatności</a>
 
-            <div class="footer-dev">
+            <div class="footer-dev d-inline-flex align-items-center">
                 <span>dev.grizzly.by</span>
-                <img src="{{ asset('images/bear-logo.svg') }}" alt="Grizzly" height="24">
+                <img src="{{ asset('images/bear-logo.svg') }}" alt="Grizzly" height="24" class="d-block">
                 <span>seo.grizzly.by</span>
             </div>
         </div>

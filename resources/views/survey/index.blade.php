@@ -3,7 +3,7 @@
 @section('title', 'Nemer-Form')
 
 @section('content')
-    <section class="hero-section l">
+    <section class="hero-section py-5">
         <div class="container">
             <div class="row align-items-center g-1">
                 <div class="col-lg-6">
@@ -20,10 +20,10 @@
                             ['file' => 'poczta',      'alt' => 'Poczta Polska'],
                             ['file' => 'magento',     'alt' => 'Magento'],
                         ] as $logo)
-                            <div class="partner-card">
+                            <div class="partner-card d-flex align-items-center justify-content-center bg-white">
                                 <img src="{{ asset('images/' . $logo['file'] . '.png') }}"
                                      alt="{{ $logo['alt'] }}"
-                                     class="partner-logo">
+                                     class="partner-logo img-fluid">
                             </div>
                         @endforeach
                     </div>
@@ -31,12 +31,12 @@
                 <div class="col-lg-5">
                     <img src="{{ asset('images/hero-box.jpg') }}"
                          alt="Kurier z paczką"
-                         class="hero-photo img-fluid">
+                         class="hero-photo img-fluid w-100">
                 </div>
             </div>
         </div>
     </section>
-    <section class="form-section py-5">
+    <section class="form-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
@@ -179,7 +179,7 @@
                                     <div class="field-error">{{ $message }}</div>
                                     @enderror
                                 </div>
-                                <button type="submit" id="submit-btn" class="btn-submit" disabled>Wysłać</button>
+                                <button type="submit" id="submit-btn" class="btn-submit text-nowrap" disabled>Wysłać</button>
                             </div>
 
                         </form>
@@ -199,7 +199,7 @@
                     <p class="success-modal-text mb-4">
                         Twoja aplikacja została wysłana.
                     </p>
-                    <button type="button" class="btn-submit" data-bs-dismiss="modal">
+                    <button type="button" class="btn-submit text-nowrap" data-bs-dismiss="modal">
                         Zamknij
                     </button>
                 </div>
@@ -207,6 +207,3 @@
         </div>
     </div>
 @endsection
-@push('scripts')
-    <script src="{{ asset('js/validation.js') }}"></script>
-@endpush

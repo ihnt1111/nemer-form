@@ -1,0 +1,107 @@
+// bootstrap config
+
+$theme-colors: (
+        "primary": #78599C,
+        "secondary": #6c757d,
+        "light": #f8f9fa,
+        "dark": #1a1a1a,
+);
+
+// bootstrap base
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+// bootstrap tree-shaking
+// keep only utilities used in blade templates
+
+$utilities: map-get-multiple(
+        $utilities,
+                (
+                        "display",
+                        "flex",
+                        "flex-direction",
+                        "flex-wrap",
+                        "justify-content",
+                        "align-items",
+                        "align-self",
+
+                        "gap",
+                        "column-gap",
+                        "row-gap",
+
+                        "margin",
+                        "margin-top",
+                        "margin-bottom",
+                        "margin-start",
+                        "margin-end",
+                        "margin-x",
+                        "margin-y",
+
+                        "padding",
+                        "padding-top",
+                        "padding-bottom",
+                        "padding-start",
+                        "padding-end",
+                        "padding-x",
+                        "padding-y",
+
+                        "text-align",
+                        "text-decoration",
+                        "font-weight",
+                        "white-space",
+
+                        "width",
+                        "height",
+
+                        "color",
+                        "background-color",
+                )
+);
+
+// bootstrap layout
+
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+
+// bootstrap forms & buttons
+
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+
+// bootstrap components
+
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/offcanvas";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/close";
+
+// bootstrap helpers
+
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities/api";
+
+// custom
+
+@import "base";
+@import "header";
+@import "mobile-menu";
+@import "hero";
+@import "form";
+@import "phones";
+@import "textarea";
+@import "checkbox";
+@import "validation";
+@import "buttons";
+@import "modal";
+@import "footer";
+@import "media";

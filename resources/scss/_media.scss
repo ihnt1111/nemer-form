@@ -1,0 +1,107 @@
+@media (max-width: 1398px) {
+  .partners-grid {
+    margin-bottom: 50px;
+  }
+  .hero-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .hero-title {
+    font-size: 32px;
+  }
+  .partners-grid {
+    gap: 12px;
+    width: 92%;
+  }
+  .partner-card {
+    min-height: 50px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .desktop-nav {
+    gap: 20px;
+  }
+  .header-right {
+    gap: 20px;
+  }
+  .partners-grid {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1032px) {
+  .partners-grid {
+    margin-right: 0;
+    width: 92%;
+  }
+  .hero-title {
+    font-size: 30px;
+  }
+  .form-card .form-textarea {
+    min-height: calc(1.4em * 7);
+  }
+
+  input[type="date"].form-control-underline {
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 41px;
+    line-height: 41px;
+    padding: 0;
+    text-align: left;
+    color: var(--form-text);
+  }
+  input[type="date"].form-control-underline:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+  }
+  input[type="date"].form-control-underline:required:invalid::before {
+    content: 'dd.mm.rrrr';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--form-text-muted);
+    pointer-events: none;
+    font-size: 16px;
+  }
+  input[type="date"].form-control-underline:required:valid::-webkit-datetime-edit,
+  input[type="date"].form-control-underline:focus::-webkit-datetime-edit {
+    color: var(--form-text);
+  }
+  input[type="date"].form-control-underline::-webkit-date-and-time-value {
+    text-align: left;
+  }
+}
+
+@media (max-width: 991px) {
+  .partners-grid {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+  .partners-grid {
+    gap: 12px;
+    margin: 0 auto;
+  }
+  .partner-card {
+    padding: 18px 14px;
+    min-height: 80px;
+  }
+  .partner-logo {
+    max-height: 36px;
+  }
+  .hero-photo {
+    margin-top: 20px;
+  }
+}
